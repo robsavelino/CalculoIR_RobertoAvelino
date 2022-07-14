@@ -36,10 +36,14 @@ namespace CalculoIR.Presentation
                 switch (selectedOption)
                 {
                     case 1:
+                        Console.Clear();
+                        Console.WriteLine("1 - Calculo simples, sem mostrar a aliquota e dedução.");
                         value = PrintGetInput();
                         PrintResult(value);
                         break;
                     case 2:
+                        Console.Clear();
+                        Console.WriteLine("2 - Cálculo completo, mostrando a alíquota e dedução.");
                         value = PrintGetInput();
                         PrintAliquot(value);
                         PrintDeduction(value);
